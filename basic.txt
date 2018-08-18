@@ -1,0 +1,33 @@
+#初始化一个git仓库
+git init;
+
+#clone指定的url仓库
+git clone <url>;
+
+#输出git仓库当前的文件状态
+git status
+
+#输出git仓库当前的提交记录
+git log
+
+#向git仓库添加文件
+git add <file>;
+
+#从git仓库撤销文件
+git reset HEAD <file>;
+
+#撤销这个文件所有修改（撤销到本地最后一个提交时候的状态内容）。
+git checkout -- <file>;
+
+#撤销到指定的id，所有修改的内容保留（保留内容）。
+git reset --soft <id>
+
+#撤销到指定的id，所有修改的内容不保留（不保留内容），谨慎操作。
+git reset --hard <id>
+
+#文件差分
+git diff <file>
+
+#切换分支
+git checkout -B <本地分支> <远程分支>
+
